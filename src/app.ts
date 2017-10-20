@@ -79,12 +79,15 @@ export class Server {
 
   routes(baseUrl) {
     let self = this;
+    console.log("routes base....",baseUrl)
     self.addModule().forEach((element) => {
       self.factory(element, baseUrl);
     })
   }
 
   factory(data: any, baseUrl: any) {
+    console.log(data)
+    console.log(baseUrl)
     app.use(baseUrl(data.toLowerCase()), new Modules[data + "Routes"](express.Router()).Routes());
   }
 

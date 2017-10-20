@@ -60,6 +60,21 @@ var AccountViewController = /** @class */ (function (_super) {
             });
         }); };
     };
+    AccountViewController.prototype.getList = function () {
+        var _this = this;
+        var self = this;
+        return function (req, res) { return __awaiter(_this, void 0, void 0, function () {
+            return __generator(this, function (_a) {
+                try {
+                    return [2 /*return*/, res.render('modules/Account/views/user', { "title": "ttttt" })];
+                }
+                catch (e) {
+                    return [2 /*return*/, ""];
+                }
+                return [2 /*return*/];
+            });
+        }); };
+    };
     return AccountViewController;
 }(index_1.Core.BaseController));
 exports.AccountViewController = AccountViewController;

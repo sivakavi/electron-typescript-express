@@ -22,7 +22,7 @@ var Routes = /** @class */ (function (_super) {
     }
     Routes.prototype.Routes = function () {
         var self = this;
-        self.route.get("/", self.accountViewController.index());
+        self.route.get("/test", self.accountViewController.getList());
         return self.route;
     };
     return Routes;
