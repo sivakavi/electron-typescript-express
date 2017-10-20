@@ -13,8 +13,7 @@ export class Routes {
     Routes() {
         let self = this;
         self.route.get("/", async (req: any, res: any) => {
-            console.log("route called.....");
-            return "test main route...";
+            res.render('test',{ "title": "Login"});
         });
         return self.route;
     }

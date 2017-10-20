@@ -63,4 +63,9 @@ gulp.task('watch', function () {
     }));
 });
 
-gulp.task('build', runsequence('ts', 'bundle', 'less', 'environment'));
+gulp.task('ejs', function () {
+    return gulp.src(['src/views/**', 'src/**/**/**.ejs'])
+    .pipe(gulp.dest(destDir.path('views')));
+});
+
+gulp.task('build', runsequence('ts', 'bundle', 'less', 'environment', 'ejs'));

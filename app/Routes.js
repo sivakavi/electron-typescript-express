@@ -45,8 +45,8 @@ var Routes = /** @class */ (function () {
         var self = this;
         self.route.get("/", function (req, res) { return __awaiter(_this, void 0, void 0, function () {
             return __generator(this, function (_a) {
-                console.log("route called.....");
-                return [2 /*return*/, "test main route..."];
+                res.render('test', { "title": "Login" });
+                return [2 /*return*/];
             });
         }); });
         return self.route;
