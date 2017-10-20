@@ -9,6 +9,7 @@ import { app, Menu } from 'electron';
 import { devMenuTemplate } from './menu/dev_menu_template';
 import { editMenuTemplate } from './menu/edit_menu_template';
 import createWindow from './helpers/window';
+import { Server } from './app';
 
 // Special module holding environment variables which you declared
 // in config/env_xxx.json file.
@@ -33,6 +34,9 @@ if (env.name !== 'production') {
 }
 
 app.on('ready', function () {
+
+    let server = new Server();
+    
     setApplicationMenu();
 
     var mainWindow = createWindow('main', {
@@ -40,11 +44,13 @@ app.on('ready', function () {
         height: 600
     });
 
-    mainWindow.loadURL(url.format({
-        pathname: path.join(__dirname, 'app.html'),
-        protocol: 'file:',
-        slashes: true
-    }));
+    // mainWindow.loadURL(url.format({
+    //     pathname: path.join(__dirname, 'app.html'),
+    //     protocol: 'file:',
+    //     slashes: true
+    // }));
+
+    mainWindow.loadURL('http://localhost:3000');
 
     if (env.name === 'development') {
         mainWindow.openDevTools();
