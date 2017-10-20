@@ -30,12 +30,9 @@
   },
   "dependencies": {
     "@types/body-parser": "^1.16.0",
-    "@types/express": "^4.0.35",
     "@types/electron": "^1.4.33",
+    "@types/express": "^4.0.35",
     "@types/node": "^7.0.7",
-    "fs-jetpack": "^0.10.2",
-    "run-sequence": "^1.2.2",
-    "typescript": "^2.2.1",
     "bcryptjs": "^2.3.0",
     "bluebird": "^3.5.0",
     "body-parser": "^1.15.2",
@@ -45,10 +42,15 @@
     "electron-prebuilt": "^1.4.13",
     "express": "^4.14.0",
     "express-session": "^1.14.0",
+    "fs-jetpack": "^0.10.2",
     "mysql2": "^1.4.2",
+    "nodemailer": "^4.2.0",
+    "reflect-metadata": "^0.1.10",
+    "run-sequence": "^1.2.2",
     "sequelize": "^4.13.0",
     "sequelize-cli": "^3.0.0",
-    "sequelize-typescript": "^0.3.1"
+    "sequelize-typescript": "^0.3.1",
+    "typescript": "^2.2.1"
   },
   "devDependencies": {
     "chai": "^3.5.0",

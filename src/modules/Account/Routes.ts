@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { Core } from "../Core";
+import { Core } from "../Core/index";
 import { AccountViewController } from "./controller/AccountViewController";
 
 export class Routes extends Core.BaseRoutes {

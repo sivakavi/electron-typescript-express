@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from "express";
-import { Core } from "../../Core";
+import { Core } from "../../Core/index";
 
 export class AccountViewController extends Core.BaseController {
 

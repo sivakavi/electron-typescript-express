@@ -6,12 +6,13 @@ import * as os from 'os'; // native node.js module
 const jetpack = require('fs-jetpack'); // module loaded from npm
 import env from './env';
 
+import "reflect-metadata";
 import * as express from "express";
 import * as bodyParser from "body-parser";
 import { Routes } from "./Routes";
 import { Sequelize } from 'sequelize-typescript';
-import { UrlHandler, ModuleHandler } from './helpers';
-import * as Modules from "./modules";
+import { UrlHandler, ModuleHandler } from './helpers/index';
+import * as Modules from "./modules/index";
 import { moduleConfig } from './config/moduleConfig';
 
 console.log('Loaded environment variables:', env);
