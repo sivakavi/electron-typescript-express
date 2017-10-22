@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var fs = require('fs');
 exports.ModuleHandler = function (addModule, path) {
     if (path === void 0) { path = __dirname; }
-    var model = [path + '/../models'];
+    var model = [];
     var modulePath = path + '/../modules';
     var modules = addModule;
     modules.forEach(function (element, index) {

@@ -6,5 +6,5 @@ exports.UrlHandler = function (url) {
     splitUrl.forEach(function (element) {
         sUrl += "/" + element;
     });
-    return "/" + sUrl;
+    return sUrl;
 };

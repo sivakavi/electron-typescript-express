@@ -1,7 +1,7 @@
 const fs = require('fs');
 
 export let ModuleHandler = (addModule, path = __dirname, ) => {
-    let model = [path + '/../models'];
+    let model = [];
     let modulePath = path + '/../modules';
     let modules = addModule;
     modules.forEach((element, index) => {

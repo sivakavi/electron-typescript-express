@@ -4,5 +4,5 @@ export let UrlHandler = (url) => {
     splitUrl.forEach((element) => {
         sUrl += "/" + element;
     })
-    return "/" + sUrl;
+    return sUrl;
 }
