@@ -1,15 +1,13 @@
 {
-  "name": "electron-boilerplate",
-  "productName": "Electron Boilerplate",
-  "description": "Starter for your Electron application",
+  "name": "electron-typescrit-express-boilerplate",
+  "productName": "Electron Typescript Express Boilerplate",
+  "description": "Starter for your Electron application including typescript express sequelize mysql",
   "version": "0.0.0",
-  "author": "Mr. Gumby <mr.gumby@example.com>",
-  "copyright": "© 2016, Gumby inc.",
-  "homepage": "http://example.com",
+  "author": "Mr. Sivakavi <sivakavi63@gmail.com>",
   "license": "MIT",
   "main": "app/background.js",
   "build": {
-    "appId": "com.example.electron-boilerplate",
+    "appId": "com.sivakavi.electron-boilerplate",
     "files": [
       "app/**/*",
       "node_modules/**/*",
@@ -61,6 +59,7 @@
     "gulp-batch": "^1.0.5",
     "gulp-less": "^3.0.3",
     "gulp-sass": "^3.1.0",
+    "gulp-clean": "^0.3.2",
     "gulp-plumber": "^1.1.0",
     "gulp-typescript": "^3.1.5",
     "gulp-util": "^3.0.6",
